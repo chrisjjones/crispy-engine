@@ -2,9 +2,11 @@
   "name": "crispy-engine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".build/crispy-engine.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"build": "grunt",
+	"start": "node ./.build/crispy-engine.min.js",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/yarmatr/crispy-engine/issues"
   },
-  "homepage": "https://github.com/yarmatr/crispy-engine#readme"
+  "homepage": "https://github.com/yarmatr/crispy-engine#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
